@@ -25,7 +25,7 @@ main{padding:0 16px 28px} .card{background:var(--card);border:1px solid var(--li
 <main id="out"></main>
 <script>
 var SHIPS=["tru-speaks","tru-door","tru-rules","tru-water","tru-fire","tru-shelter","tru-cold","tru-salt","tru-sun","tru-quiet","tru-place","tru-join","tru-signal","tru-fish"];
-function esc(s){return String(s).replace(/[&<>]/g,function(c){return {"&":"&","<":"<",">":">"}[c];});}
+function esc(s){return String(s).replace(/[&<>]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;"}[c];});}
 function textOf(html){
   var d=document.createElement("div");
   d.innerHTML=html.replace(/<script[\s\S]*?<\/script>/gi," ").replace(/<style[\s\S]*?<\/style>/gi," ");
